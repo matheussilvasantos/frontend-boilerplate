@@ -1,26 +1,14 @@
-# npm-build-boilerplate
+# frontend-boilerplate
 
 A collection of packages that build a website using `npm scripts`.
 
 * [List of packages used](#list-of-packages-used)
-* [Using in your project](#using-in-your-project)
 * [List of available tasks](#list-of-available-tasks)
-* [Need help?](#need-help)
 
 ## List of packages used
 [autoprefixer](https://github.com/postcss/autoprefixer), [browser-sync](https://github.com/Browsersync/browser-sync), [eslint](https://github.com/eslint/eslint), [imagemin-cli](https://github.com/imagemin/imagemin-cli), [node-sass](https://github.com/sass/node-sass), [onchange](https://github.com/Qard/onchange), [npm-run-all](https://github.com/mysticatea/npm-run-all), [postcss-cli](https://github.com/code42day/postcss-cli), [svgo](https://github.com/svg/svgo), [svg-sprite-generator](https://github.com/frexy/svg-sprite-generator), [uglify-js](https://github.com/mishoo/UglifyJS2).
 
 Many, many thanks go out to Keith Cirkel for [his post](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) and his useful CLI tools!
-
-## Using in your project
-* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
-* Next, use your command line to enter your project directory.
-  * If this a new project (without a `package.json` file), start by running `npm init`. This will ask a few questions and use your responses to build a basic `package.json` file. Next, copy the `"devDependencies"` object into your `package.json`.
-  * If this is an existing project, copy the contents of `"devDependencies"` into your `package.json`.
-* Now, copy any tasks you want from the `"scripts"` object into your `package.json` `"scripts"` object.
-* Finally, run `npm install` to install all of the dependencies into your project.
-
-You're ready to go! Run any task by typing `npm run task` (where "task" is the name of the task in the `"scripts"` object). The most useful task for rapid development is `watch`. It will start a new server, open up a browser and watch for any SCSS or JS changes in the `src` directory; once it compiles those changes, the browser will automatically inject the changed file(s)!
 
 ## List of available tasks
 ### `clean`
@@ -107,7 +95,3 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
   `run-s build watch`
 
   Runs `watch` after `npm install` is finished
-
-
-## Need help?
-Feel free to [create an issue](http://github.com/damonbauer/npm-build-boilerplate/issues), [tweet me](http://twitter.com/damon_bauer), or [send me an email](mailto:hello@damonbauer.me). I'd be glad to help where I can!
